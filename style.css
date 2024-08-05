@@ -1,0 +1,19 @@
+.anchor{
+    color: rgb(35, 33, 150);
+    text-decoration: none;
+      
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+h3{
+    margin-top: 20px;
+    
+}
+body{
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(152, 121, 243);
+}
