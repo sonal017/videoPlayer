@@ -15,41 +15,12 @@
     
     <h3>Please select video from your device</h3>
     <input type="file" id="videoinput" accept="video/*">
+    <h3>OR <br><br> Please enter url of your video</h3>
+    <input type="url" id="videourl" placeholder="URL">
+    <button onclick='got()'>GO</button> <br><br>
     <video id="videoplayer"  width="500" height="340" controls autoplay >
-    
     </video><br>
     <button onclick='playpause()'>play or pause</button> 
-    <script>
-        document.getElementById('videoinput').addEventListener('change',function(event){
-            const file = event.target.files[0];
-            const videoplayer = document.getElementById('videoplayer');
-            if(file){
-                const fileURL = URL.createObjectURL(file);
-                videoplayer.src = fileURL;
-            }
-        });
-
-        document.getElementById('videoplayer').addEventListener('dblclick',function(event){
-            event.stopPropagation();
-            event.preventDefault();
-            const videoplayer=event.target;
-            const videowidth= videoplayer.clientWidth;
-            const clickx= event.clientX - videoplayer.getBoundingClientRect().left;
-            if(clickx > videowidth/2){
-                videoplayer.currentTime += 10;
-            }else if(clickx < videowidth/2){
-                videoplayer.currentTime -= 5;
-            }
-        });
-
-        function playpause(){
-            var myvideo = document.getElementById('videoplayer');
-            if(myvideo.paused){
-                myvideo.play();
-            }else{
-                myvideo.pause();
-            }
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
