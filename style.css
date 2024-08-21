@@ -12,8 +12,14 @@ h3{
     margin-top: 20px;
     
 }
+#videoplayer{
+    background-color: black;
+}
+
 body{
     text-align: center;
     color: aliceblue;
+    padding: 5px;
+    margin: 5px;
     background-color: rgb(152, 121, 243);
 }
