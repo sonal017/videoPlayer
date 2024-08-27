@@ -23,3 +23,17 @@ body{
     margin: 5px;
     background-color: rgb(152, 121, 243);
 }
+@media only screen and (max-width : 768px) {
+    body{
+        text-align:center;
+        color: aliceblue;
+        padding: 5px;
+        margin: 5px;
+        background-color:rgb(152, 121, 243);
+    }
+    #videoplayer{
+        width:360px;
+        height:200px;
+    }
+   
+}
